@@ -335,14 +335,10 @@
                     tap cards
                 </p>
 
-                <button
-                    class="w-full shimmer-btn py-3 px-6 rounded-full text-maroon-950 font-semibold text-xs tracking-widest uppercase shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-calendar-check text-sm"></i> Save The D Date - 02 / 02 / 27
-                </button>
-                 <!-- <button onclick="saveTheDate()"
+                <button onclick="saveTheDate()"
                     class="w-full shimmer-btn py-3 px-6 rounded-full text-maroon-950 font-semibold text-xs tracking-widest uppercase shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
                     <i class="fa-regular fa-calendar-check text-sm"></i> Save The Date - 02 / 02 / 27
-                </button> -->
+                </button>
             </div>
         </section>
 
@@ -697,9 +693,6 @@
         function saveTheDate() {
             const title = "Amisha & Sabya's Wedding";
             const details = "Join us to celebrate the wedding of Amisha and Sabya at The Gulmohar Palace, Jaipur.";
-            const location = "The Gulmohar Palace, Jaipur, Rajasthan";
-            const startDate = "20261212T170000";
-            const endDate = "20261212T230000";
 
             const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
             window.open(calendarUrl, '_blank');
